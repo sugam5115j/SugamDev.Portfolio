@@ -404,50 +404,116 @@ header {
     }
 }
 
-@media (max-width: 576px) {
+/* Base Styles (large screens) */
+header {
+    padding: 20px 10%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-bar a {
+    margin-left: 20px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+}
+
+.home-content p {
+    font-size: 18px;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.socials-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socials-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+/* Medium screens (Tablets, 768px and below) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .nav-bar a {
+        margin: 5px 0;
+    }
+
+    .home-content {
+        padding: 0 5%;
+        text-align: center;
+    }
+
     .home-content h1 {
-        font-size: 28px;
+        font-size: 36px;
     }
 
     .home-content h3 {
-        font-size: 20px;
-    }
-
-    .home-content p {
-        font-size: 12px;
-    }
-
-    .socials-links a {
-        width: 25px;
-        height: 25px;
-        font-size: 16px;
-    }
-
-    .btn-box a {
-        margin-bottom: 8px;
-    }
-}
-
-@media (max-width: 375px) {
-    .home-content h1 {
         font-size: 24px;
     }
 
-    .home-content h3 {
-        font-size: 18px;
-    }
-
     .home-content p {
-        font-size: 10px;
-    }
-
-    .socials-links a {
-        width: 20px;
-        height: 20px;
         font-size: 14px;
     }
 
-    header, .home-content, .note {
-        padding: 10px 2%;
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn-box a {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .socials-links {
+        position: static;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .socials-links a {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .note {
+        padding: 10px;
+        font-size: 14px;
     }
 }
+
+/* Small screens (Mobile, 576px and below) */
+@media (max-width: 576px) {
+    header {
+        padding:
+
